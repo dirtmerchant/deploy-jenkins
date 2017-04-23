@@ -12,6 +12,7 @@
 
 This script is designed to deploy the Jenkins application, along with prerequisites on either CentOS or Ubuntu systems.
 
+`
 ├── Instructions.txt
 ├── README.MD
 ├── centos
@@ -22,6 +23,7 @@ This script is designed to deploy the Jenkins application, along with prerequisi
 │   └── deploy-jenkins.sh
 └── ubuntu
     └── Vagrantfile
+`
 
 - Vagrant
 
