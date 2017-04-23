@@ -12,19 +12,6 @@
 
 This script is designed to deploy the Jenkins application, along with prerequisites on either CentOS or Ubuntu systems.
 
-`
-├── Instructions.txt
-├── README.MD
-├── centos
-│   └── Vagrantfile
-├── provision
-│   └── jenkins.sh
-├── s3
-│   └── deploy-jenkins.sh
-└── ubuntu
-    └── Vagrantfile
-`
-
 - Vagrant
 
 For Vagrant-based installations, navigate to the CentOS or Ubuntu directory and issue the command:
