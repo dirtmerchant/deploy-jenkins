@@ -5,7 +5,7 @@ if [ "$EUID" -ne "0" ]; then
   exit 1
 fi
 
-  ip="$(hostname -I | awk '{ print $2 }')"
+  ip="$(hostname -I | awk '{ print $1 }')"
   echo Installing Jenkins on host with IP $ip
 
 if [ -f /etc/redhat-release ]; then
@@ -76,4 +76,4 @@ fi
 echo 'Browse to http://'$ip':8000 to visit your new Jenkins server'
 
 jenkins_pass=$( cat /var/lib/jenkins/secrets/initialAdminPassword )
-echo 'Your administor password is' $jenkins_pass
+echo 'Your admin password is' $jenkins_pass
